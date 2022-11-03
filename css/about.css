@@ -1,0 +1,132 @@
+.about-achievements{
+ margin-top: 2rem;
+}
+.about-achivevement-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5rem;
+}
+.about-achivevement-right >p{
+  margin: 1.6rem 0 2rem;
+}
+.achivement-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+.archivement-card{
+  background-color: var(--color-bg1);
+  padding: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.archivement-card:hover{
+ background-color: var(--color-bg2);
+ box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+.archivement-icon{ 
+  background-color: var(--color-danger);
+  padding: 0.8rem;
+  border-radius:1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.archivement-card:nth-child(2) .archivement-icon{
+  background-color: var(--color-success);
+}
+.archivement-card:nth-child(3) .archivement-icon{
+  background-color: var(--color-primary);
+}
+.archivement-card p{
+  margin-top: 1rem;
+}
+.team{
+  background-color: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+.team-contanier{
+ display: grid;
+ grid-template-columns:repeat(4,1fr);
+ gap: 2rem;
+}
+.team-member{
+ background-color: var(--color-bg2);
+ padding: 2rem;
+ border: 1px solid transparent;
+ border-radius: 1rem;
+ transition: var(--transition);
+ position: relative;
+ overflow: hidden;
+}
+.team-member:hover{
+  background-color: transparent;
+  border: 1px solid  var(--color-primary);
+}
+.team-member:hover img{
+  filter: saturate(100%);
+}
+.team-member:hover .team-member-social{
+  right: 0;
+}
+.team-member-image img{
+ filter: saturate(0);
+}
+
+.team-info *{
+ text-align: center;
+ margin-top: 1.4rem;
+}
+.team-member-social{
+ position: absolute;
+ top: 50%;
+ right: -100%;
+ display: flex;
+ flex-direction: column;
+ background-color: var(--color-primary);
+ border-radius: 1rem 0 0 1rem;
+ transition: var(--transition);
+ transform: translateY(-50%);
+ box-shadow:-2rem 0 2rem rgba(0,0,0,0.3) ;
+}
+.team-member-social a{
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px){
+  .about-achievements{
+    margin-top: 2rem;
+  }
+  .about-achivevement-container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .about-achivevement-left{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .team-contanier{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+  }
+  .team-member{
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 600px){
+  .achivement-cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+  .team-contanier{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7;
+  }
+  .team-member{
+    padding: 0;
+  }
+  .team-member p{
+    margin-bottom: 1.5rem;
+  }
+}

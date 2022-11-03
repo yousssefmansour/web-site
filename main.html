@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>EGRTOR</title>
+</head>
+<body>
+   <nav id="nav">
+       <div class="container container-nav" >
+            <a href="main.html"><h4>EGRTOR</h4></a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>            
+            <button id="bar-btn" onclick="menu1();"><i class="fa-solid fa-bars"></i></button>
+            <button><i class="fa-solid fa-xmark" id="nav-close-btn" onclick="close1();"></i></button>
+       </div>
+   </nav>
+
+
+
+
+
+  <header>
+   <div class="container hearder-container">
+     <div class="header-left">
+         <h1>Grow your skills to andvance your career path</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi consequatur corporis temporibus.
+         Asperiores deserunt exercitationem in itaque.</p>
+         <a href="course.html" class="btn btn-primary">Get Strarted</a>
+     </div>
+      <div class="header-right-img">
+       <img src="images/header.svg" alt="">
+      </div>
+   </div>
+  </header>
+
+
+
+
+
+
+   <section class="catagories">
+     <div class="container catagories-container">
+         <div class="catagories-left">
+          <h1>catagories</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ullam, tenetur, repellendus veniam accusantium sed placeat temporibus perferendis 
+            quam tempora necessitatibus.</p>
+         <a href="#" class="btn">Learn More</a>
+         </div>
+         <div class="catagories-right">
+           <article class="catagory">
+             <span class="catagory-icon"><i class="fa-brands fa-bitcoin"></i></span>
+             <h5>Blockchain</h5>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+           </article>
+           <article class="catagory">
+            <span class="catagory-icon"><i class="fa-solid fa-paint-roller"></i></span>
+            <h5>Graphic Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+          </article>
+          <article class="catagory">
+            <span class="catagory-icon"><i class="fa-solid fa-coins"></i></span>
+            <h5>Finance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+          </article>
+          <article class="catagory">
+            <span class="catagory-icon"><i class="fa-solid fa-shop"></i></span>
+            <h5>Mraketing</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+          </article>
+          <article class="catagory">
+            <span class="catagory-icon"><i class="fa-solid fa-music"></i></span>
+            <h5>Music</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+          </article>
+          <article class="catagory">
+            <span class="catagory-icon"><i class="fa-solid fa-business-time"></i></span>
+            <h5>Business</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint.</p>
+          </article>
+         </div>
+     </div>
+   </section>
+
+
+
+
+
+
+
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+      <div class="container courses-container">
+        <article class="course">
+          <div class="course-image">
+              <img src="images/course1.jpg" alt="">
+          </div>
+          <div class="courses-info">
+            <h4>Responsvie Social Media Website UI Design</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Vel atque eveniet laborum earum ut dolor dolorum?
+            </p>
+            <a href="course.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+        <article class="course">
+            <div class="course-image">
+                <img src="images/course2.jpg" alt="">
+            </div>
+            <div class="courses-info">
+              <h4>Responsvie SmartHome Website Design</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Vel atque eveniet laborum earum ut dolor dolorum?
+              </p>
+              <a href="course.html" class="btn btn-primary">Learn More</a>
+           </div>
+          </article>
+        <article class="course">
+            <div class="course-image">
+                <img src="images/course3.jpg" alt="">
+            </div>
+            <div class="courses-info">
+              <h4>Responsvie Admin Dashboard UI Design</h4>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Vel atque eveniet laborum earum ut dolor dolorum?
+               </p>
+               <a href="course.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs-container">
+            <article class="faq" id="1" onclick="faq(this.id);">
+                 <div class="faq-icon"><i class="fa-regular fa-plus" id="1i" ></i></div>
+                 <div class="question-answer">
+                     <h4>How do I know the rigth courses of me?</h4>
+                     <p id="1p">
+                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+                         veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+                     </p>
+                 </div>
+            </article>
+            <article class="faq" id="2" onclick="faq(this.id);">
+                <div class="faq-icon"><i class="fa-regular fa-plus" id="2i" ></i></div>
+                <div class="question-answer">
+                    <h4>How do I know the rigth courses of me?</h4>
+                    <p id="2p">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+                        veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+                    </p>
+                </div>
+           </article>
+           <article class="faq"  id="3" onclick="faq(this.id);">
+            <div class="faq-icon"><i class="fa-regular fa-plus" id="3i" ></i></div>
+            <div class="question-answer">
+                <h4>How do I know the rigth courses of me?</h4>
+                <p id="3p" >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+                    veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+                </p>
+            </div>
+       </article>
+       <article class="faq"  id="4" onclick="faq(this.id);">
+        <div class="faq-icon"><i class="fa-regular fa-plus"id="4i"  ></i></div>
+        <div class="question-answer">
+             <h4>How do I know the rigth courses of me?</h4>
+             <p id="4p">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+                veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+             </p>
+        </div>
+      </article>
+
+     <article class="faq"  id="5" onclick="faq(this.id);">
+      <div class="faq-icon"><i class="fa-regular fa-plus" id="5i" ></i></div>
+       <div class="question-answer">
+         <h4>How do I know the rigth courses of me?</h4>
+         <p id="5p"  >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+            veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+         </p>
+      </div>
+     </article>
+
+     <article class="faq" id="6" onclick="faq(this.id);">
+        <div class="faq-icon"><i class="fa-regular fa-plus" id="6i"></i></div>
+         <div class="question-answer">
+           <h4>How do I know the rigth courses of me?</h4>
+           <p id="6p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+              veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+           </p>
+        </div>
+       </article> 
+
+       <article class="faq" id="7" onclick="faq(this.id);">
+        <div class="faq-icon"><i class="fa-regular fa-plus" id="7i"></i></div>
+         <div class="question-answer">
+           <h4>How do I know the rigth courses of me?</h4>
+           <p id="7p" >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+              veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+           </p>
+        </div>
+       </article>
+
+       <article class="faq"  id="8" onclick="faq(this.id);" >
+        <div class="faq-icon"><i class="fa-regular fa-plus" id="8i"></i></div>
+         <div class="question-answer">
+           <h4>How do I know the rigth courses of me?</h4>
+           <p id="8p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+              veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+           </p>
+        </div>
+       </article>
+
+       <article class="faq" id="9" onclick="faq(this.id);" >
+        <div class="faq-icon"><i class="fa-regular fa-plus" id="9i"></i></div>
+         <div class="question-answer">
+           <h4>How do I know the rigth courses of me?</h4>
+           <p id="9p"> 
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+              veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+           </p>
+        </div>
+       </article>
+
+       <article class="faq" id="10" onclick="faq(this.id);">
+        <div class="faq-icon"><i class="fa-regular fa-plus" id="10i"></i></div>
+         <div class="question-answer">
+           <h4>How do I know the rigth courses of me?</h4>
+           <p id="10p">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic inventore eaque vitae rem? Esse aperiam eius similique praesentium
+              veritatis accusamus ut rerum! Quaerat optio illum quos quas soluta fugiat.
+           </p>
+        </div>
+       </article>  
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="container testimonial-container mySwiper"> 
+      <h2>Students Testimonial</h2>
+        <div class="swiper-wrapper" >
+         <article class="testimonial swiper-slide">
+           <div class="avatar">
+             <img src="images/avatar1.jpg" alt="">
+           </div>
+           <div class="testimonial-info">
+              <h5>leo Kasper</h5>
+              <small>Student</small>
+           </div>
+           <div class="testimonial-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+            </p>
+           </div>
+         </article>
+
+         <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="images/avatar2.jpg" alt="">
+          </div>
+          <div class="testimonial-info">
+             <h5>leo Kasper</h5>
+             <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+           </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="images/avatar3.jpg" alt="">
+          </div>
+          <div class="testimonial-info">
+             <h5>leo Kasper</h5>
+             <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+           </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="images/avatar4.jpg" alt="">
+          </div>
+          <div class="testimonial-info">
+             <h5>leo Kasper</h5>
+             <small>Student</small>
+          </div>
+
+          <div class="testimonial-body">
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+           </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="images/avatar5.jpg" alt="">
+          </div>
+          <div class="testimonial-info">
+             <h5>leo Kasper</h5>
+             <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+           </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="images/avatar8.jpg" alt="">
+          </div>
+          <div class="testimonial-info">
+             <h5>leo Kasper</h5>
+             <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             In, omnis atque odio quaerat quasi iste dicta aperiam, magnam nemo non maxime est facilis!
+           </p>
+          </div>
+        </article>
+       </div>
+       <div class="swiper-pagination"></div>
+    </section>
+     
+
+
+
+
+
+
+    <footer class="footer">
+     <div class="container footer-container">
+
+       <div class="footer-1">
+         <a href="main.html" class="footer-logo" ><h4>EGATOR</h4></a>
+         <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sit.
+         </p>
+       </div>
+
+       <div class="footer-2">
+         <h4>Permalinks</h4>
+         <ul class="permalinks">
+           <li><a href="main.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="course.html">Courses</a></li>
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+       
+       <div class="footer-3">
+        <h4>Primacy</h4>
+        <ul class="Primacy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-4">
+        <h4>Contact US</h4>
+       <div>
+        <p>+01 254 567 8910</p>
+        <p>shakir260@gmail.com</p>
+       </div>
+        <ul class="footer-socials">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+         <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+         </li>
+      </ul>
+      </div>
+    </div>
+    <div class="copy-right">
+      <small>Copyright &copy; EGATOR</small>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="javascrpit/main.js"></script>
+</body>
+</html>
